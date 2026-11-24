@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>og</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:#08080a}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden}
+  .tape{position:absolute;top:0;left:0;right:0;height:8px;background:repeating-linear-gradient(135deg,#ff6a00 0 14px,#0a0a0b 14px 28px);z-index:3}
+  .glow{position:absolute;inset:0;background:
+    radial-gradient(760px 440px at 82% 120%,rgba(255,106,0,.30),transparent 62%),
+    radial-gradient(560px 320px at 8% -20%,rgba(255,176,0,.12),transparent 60%);}
+  .grid{position:absolute;inset:0;opacity:.5;background-image:
+    linear-gradient(rgba(245,242,234,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(245,242,234,.055) 1px,transparent 1px);
+    background-size:84px 84px;
+    -webkit-mask-image:radial-gradient(ellipse 75% 75% at 40% 50%,#000 25%,transparent 80%);
+    mask-image:radial-gradient(ellipse 75% 75% at 40% 50%,#000 25%,transparent 80%);}
+  .wrap{position:relative;z-index:2;padding:54px 66px 0}
+  .brand{display:flex;align-items:center;gap:13px}
+  .brand svg{width:38px;height:38px}
+  .brand span{font-family:"JetBrains Mono",monospace;font-size:13px;letter-spacing:.24em;color:#f5f2ea;text-transform:uppercase}
+  .brand em{display:block;font-style:normal;font-size:9px;letter-spacing:.3em;color:#6d685f;margin-top:5px}
+  h1{font-family:"Inter Tight",sans-serif;font-weight:800;font-size:84px;line-height:.9;letter-spacing:-.045em;color:#f5f2ea;text-transform:uppercase;margin:34px 0 0}
+  h1 span{background:linear-gradient(115deg,#ffb000 0%,#ff6a00 46%,#e0242e 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .deck{font-family:"Inter",sans-serif;font-size:21px;line-height:1.45;color:#a09b90;max-width:730px;margin-top:24px}
+  .deck b{color:#f5f2ea;font-weight:500}
+  .meta{position:absolute;z-index:2;left:66px;right:66px;bottom:30px;display:flex;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.2em;color:#8a857b;text-transform:uppercase}
+  .meta .red{color:#e0242e}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="tape"></div>
+  <div class="glow"></div>
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="120" x2="120" y2="0">
+          <stop offset="0" stop-color="#ffb000"/><stop offset=".5" stop-color="#ff6a00"/><stop offset="1" stop-color="#e0242e"/>
+        </linearGradient></defs>
+        <g fill="none" stroke="url(#g)" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round">
+          <path id="p" d="M60 60C52 38 54 20 68 12C82 24 80 44 60 60Z"/>
+          <use href="#p" transform="rotate(60 60 60)"/><use href="#p" transform="rotate(120 60 60)"/>
+          <use href="#p" transform="rotate(180 60 60)"/><use href="#p" transform="rotate(240 60 60)"/>
+          <use href="#p" transform="rotate(300 60 60)"/>
+        </g><circle cx="60" cy="60" r="2.8" fill="#ff6a00"/>
+      </svg>
+      <span>Shirudo<em>Field report</em></span>
+    </div>
+    <h1>The hidden<br><span>risks of</span><br>Shirudo</h1>
+    <div class="deck">OpenAI and Cisco built an AI shield for Linux. According to <b>its own manual</b>, it is a lock with no key.</div>
+  </div>
+  <div class="meta"><span>An independent security review</span><span class="red">Pre-release · no stable version</span><span>24 Nov 2026</span></div>
+</div>
+</body>
+</html>
