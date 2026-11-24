@@ -4,6 +4,8 @@ A visual, independent security review of **Shirudo**, the OpenAI × Cisco eBPF s
 
 **Read it live:** https://tespio.github.io/shirudo-hidden-risks/
 
+**Published by** [@MyDaebakCafe](https://x.com/MyDaebakCafe).
+
 ## What this is
 
 Shirudo is an AI-fed, kernel-level enforcement layer for Linux. This page reads the project's own public documentation — the threat model, system requirements, interoperability notes and recovery guide — and lays out the deployment, availability, integrity and governance risks in plain language.

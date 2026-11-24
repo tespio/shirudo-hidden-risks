@@ -193,6 +193,18 @@ h1 .grad{
   border:1px solid var(--line);padding:7px 11px;border-radius:2px;background:rgba(255,255,255,.015);
 }
 .chip--hot{color:var(--orange);border-color:rgba(255,106,0,.35);background:rgba(255,106,0,.05)}
+.byline{
+  display:flex;align-items:center;justify-content:center;gap:9px;margin-top:16px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+}
+.byline__k{color:var(--dim)}
+.byline a{
+  display:inline-flex;align-items:center;gap:7px;color:var(--ink);text-decoration:none;
+  border-bottom:1px solid rgba(245,242,234,.24);padding-bottom:3px;
+  transition:color .25s,border-color .25s;
+}
+.byline a:hover{color:var(--orange);border-color:var(--orange)}
+.byline .xmark{width:11px;height:11px;fill:currentColor;opacity:.9;flex:none}
 
 .hero__foot{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
 .scrollcue{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--dim);text-decoration:none}
@@ -594,6 +606,13 @@ html.static .cursor-glow{display:none}
       <span class="chip">8/15 assumptions unchecked</span>
       <span class="chip">1 signing key</span>
     </div>
+    <p class="byline">
+      <span class="byline__k">Published by</span>
+      <a href="https://x.com/MyDaebakCafe" target="_blank" rel="noopener noreferrer">
+        <svg class="xmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+        @MyDaebakCafe
+      </a>
+    </p>
   </div>
 
   <div class="hero__foot">
@@ -942,7 +961,8 @@ html.static .cursor-glow{display:none}
       <p style="margin-top:12px"><strong>Basis.</strong> Every claim about Shirudo's behavior is drawn from the project's own public documentation, quoted or paraphrased. Figures reflect the documentation as of 24 November 2026.</p>
     </div>
     <div class="footer__meta">
-      <span><b>Published</b> 24 Nov 2026</span>
+      <span><b>Published by</b> <a href="https://x.com/MyDaebakCafe" target="_blank" rel="noopener noreferrer">@MyDaebakCafe</a></span>
+      <span><b>Date</b> 24 Nov 2026</span>
       <span><b>Format</b> Static page · no trackers</span>
       <span><b>Design</b> Borrows the restraint of the OpenAI × Cisco launch language, then turns the palette to hazard.</span>
       <span><b>Source</b> <a href="./the_hidden_risks_of_shirudo.md">Markdown original</a></span>
